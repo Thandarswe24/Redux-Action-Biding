@@ -1,4 +1,5 @@
 const initialState={}
+
     export default (state = initialState, action) => {
         console.log("action", action);
         switch (action.type) {
@@ -6,6 +7,6 @@ const initialState={}
                 ...state, users: action.payload
             }
         
-            default: return state
+            default: return state;
         }
     }

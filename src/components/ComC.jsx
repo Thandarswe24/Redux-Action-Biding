@@ -3,17 +3,17 @@ import React, {useEffect} from 'react'
 import { connect } from 'react-redux';
 import { getUsers } from '../store/actions/usersAction';
 
-const ComC = ({userUi, FetchGetUser}) => {
-    console.log("UsersUI", userUi);
+const ComC = ({usersUi, FetchGetUser}) => {
+    console.log("UsersUI", usersUi);
     useEffect(() => {
       FetchGetUser()
-    }, [third])
+    }, [])
     
   return (
     <div>
       <h1>Component C</h1>
       {
-        userUi && userUi.map((e) => (
+        usersUi && usersUi.map((e) => (
 
             <div>
                 <span>{ e.username }</span>
@@ -27,7 +27,7 @@ const ComC = ({userUi, FetchGetUser}) => {
 }
 
 const mapStateToProps = (state) => ({
-    userUi : state?.usersRoot?.users
+    usersUi : state?.usersRoot?.users
 })
 const mapDispatchToProps = {
     FetchGetUser: getUsers

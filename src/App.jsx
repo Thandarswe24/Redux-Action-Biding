@@ -1,14 +1,11 @@
+import React from 'react'
+import ComA from './components/ComA'
 
-import './App.css'
-
-function App() {
-   const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div >
+    <div>
       <ComA/>
     </div>
-   
   )
 }
 
