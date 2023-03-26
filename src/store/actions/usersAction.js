@@ -7,7 +7,7 @@ export const getUsers = () => {
 
     return async (dispatch) => {
         try {
-            await axios.get(`http://localhost:3002/users`).then((e) => (
+            await axios.get(`http://localhost:3000/users`).then((e) => (
 
             dispatch({
                 type: "GETUSERS",

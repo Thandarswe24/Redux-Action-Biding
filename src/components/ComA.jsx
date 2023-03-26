@@ -4,7 +4,7 @@ import ComB from './ComB'
 const ComA = () => {
   return (
     <div>
-    ComA
+  
     <ComB/>
       
     </div>
